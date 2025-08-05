@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Anja Eliane';
+    src: url(../assets/fonts/Anja\ Eliane.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    height: 170px;
+    width: 600px;
+}
+
+#banner {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-image: url("../assets/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0.8) blur(3px);
+    z-index: 1;
+}
+
+#profile-pic img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    object-fit: cover;
+    z-index: 2;
+}
+
+#stream-info {
+    position: absolute;
+    top: 20px;
+    left: 160px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    z-index: 2;
+}
+
+#paragraphe {
+    color: white;
+    font-family: 'Anja Eliane';
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#chrono {
+    color: #ffffff;
+    font-family: 'Anja Eliane';
+    font-size: 24px;
+    font-weight: bold;
+    
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+#count {
+    color : white ; 
+    font-family: 'Anja Eliane';
+    font-size: 20px;
+    
+    z-index: 2;
+    margin-top: -40px;
+    margin-left: 280px;
+
+}
+
+#titre { 
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1px;
+}
+
+  #youtube {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      margin-top: 125px;
+      margin-left: 180px;
+      z-index: 2;
+  }
+
+#youtube img {
+    width: 50px;
+    height: auto;
+}
+
+#youtube-texte {
+    color : white ; 
+    font-family: 'Anja Eliane';
+    position: relative;
+    font-size: 14px;
+    margin-left: 10px;
+    top: -15px;
+}
+
+
+
+#twitch {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      margin-top: 125px;
+      margin-left: 200px;
+      z-index: 2;
+}
+
+#twitch img {
+    width: 40px;
+    height: auto;
+    margin-left: 200px;
+    top : -10px ; 
+}
+
+#Twitch-texte {
+    color : white ; 
+    font-family: 'Anja Eliane';
+    position: relative;
+    font-size: 14px;
+    margin-left: 10px;
+    top: -15px;
+}
+
+#red img {
+    position: relative;
+    margin-top: 55px;
+    width: 20px;
+    height: auto;
+    margin-left: 490px;
+    z-index: 3;
+    transition: filter 0.5s ease ;
+    filter : brightness(0.5) drop-shadow(0 0 2px #400000);
+}
+
+#red.on img {
+    filter : brightness(5) drop-shadow(0 0 30px red) drop-shadow(0 0 10px #ff4444) ; 
+}

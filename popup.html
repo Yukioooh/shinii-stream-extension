@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div id="banner"></div>
+    <div id="profile-pic">
+        <img src = "assets/images/Shinii.png" alt="Shinii's Profile Picture" />
+    </div>
+
+    <div id="stream-info">
+        <p id="paragraphe">Temps ecoule depuis le dernier stream de Shinii :</p>
+        <p id="chrono"></p>
+        <p id="titre"></p>
+        <p id="count"></p>
+    </div>
+
+    <div id="youtube">   
+        <a href="https://www.youtube.com/@Shinigang" target="_blank">
+            <img src = "assets/images/Youtube_logo.png" alt="Logo Youtube" />
+            <span id="youtube-texte">Shinii</span>
+        </a>
+    </div>
+
+    <div id="twitch">   
+        <a href="https://www.twitch.tv/shinii" target="_blank">
+            <img src = "assets/images/twitch-logo.png" alt="Logo twitch" />
+            <span id="Twitch-texte">Shinii</span>
+        </a>
+    </div>
+
+    <div id="red">
+        <img src="assets/images/red-circle.png" alt="on air">
+    </div>
+
+    <audio id="notification-sound" preload="auto">
+        <source src="./notif.mp3" type="audio/mp3">
+    </audio>
+    <script src="js/index.js"></script>
+</body>
+</html>

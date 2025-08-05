@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Shini Stream Extension",
+    "version": "1.0",
+    "description": "Compteur depuis le dernier stream de Shini",
+
+    "icons" : {
+      "16" : "assets/images/Shinii.png",
+      "32" : "assets/images/Shinii.png",
+      "64" : "assets/images/Shinii.png",
+      "128" : "assets/images/Shinii.png"
+    },
+    "permissions": [
+      "notifications"
+    ],
+    "host_permissions": [
+      "https://api.twitch.tv/*",
+      "https://shinii-extension-l0xoq2p35-yukios-projects-13ff26f7.vercel.app/*"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
